@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.49.0" timestamp="2022-12-21T16:44:58.817">
+<file name="C:\Users\jorge\Documents\GitHub\ISO2-22-23-C01Testing-P1\YearBisiesto\src\main\java\ISO_C01_G01\YearBisiesto\calculoBisiesto.java">
+<violation beginline="34" endline="34" begincolumn="12" endcolumn="30" rule="UselessParentheses" ruleset="Code Style" package="ISO_C01_G01.YearBisiesto" class="calculoBisiesto" method="comprobarBisiesto" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="35" endline="35" begincolumn="7" endcolumn="27" rule="UselessParentheses" ruleset="Code Style" package="ISO_C01_G01.YearBisiesto" class="calculoBisiesto" method="comprobarBisiesto" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="36" endline="36" begincolumn="6" endcolumn="33" rule="UselessParentheses" ruleset="Code Style" package="ISO_C01_G01.YearBisiesto" class="calculoBisiesto" method="comprobarBisiesto" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="36" endline="36" begincolumn="7" endcolumn="27" rule="UselessParentheses" ruleset="Code Style" package="ISO_C01_G01.YearBisiesto" class="calculoBisiesto" method="comprobarBisiesto" externalInfoUrl="https://pmd.github.io/pmd-6.49.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+</pmd>

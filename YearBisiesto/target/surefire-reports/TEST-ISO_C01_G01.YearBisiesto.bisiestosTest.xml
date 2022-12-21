@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="ISO_C01_G01.YearBisiesto.bisiestosTest" time="0.007" errors="0" skipped="0">
+<testsuite tests="7" failures="0" name="ISO_C01_G01.YearBisiesto.bisiestosTest" time="0.014" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_351\jre\bin"/>
     <property name="java.vm.version" value="25.351-b10"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\jorge\eclipse-workspace\YearBisiesto"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\jorge\Documents\GitHub\ISO2-22-23-C01Testing-P1\YearBisiesto"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\jorge\eclipse-workspace\YearBisiesto"/>
+    <property name="user.dir" value="C:\Users\jorge\Documents\GitHub\ISO2-22-23-C01Testing-P1\YearBisiesto"/>
     <property name="java.runtime.version" value="1.8.0_351-b10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_351\jre\lib\endorsed"/>
@@ -66,11 +66,11 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="ISO_C01_G01.YearBisiesto.bisiestosTest" name="testsetter" time="0.006"/>
-  <testcase classname="ISO_C01_G01.YearBisiesto.bisiestosTest" name="tests1" time="0.001"/>
+  <testcase classname="ISO_C01_G01.YearBisiesto.bisiestosTest" name="testsetter" time="0.009"/>
+  <testcase classname="ISO_C01_G01.YearBisiesto.bisiestosTest" name="tests1" time="0.003"/>
   <testcase classname="ISO_C01_G01.YearBisiesto.bisiestosTest" name="tests2" time="0"/>
   <testcase classname="ISO_C01_G01.YearBisiesto.bisiestosTest" name="tests3" time="0"/>
-  <testcase classname="ISO_C01_G01.YearBisiesto.bisiestosTest" name="tests4" time="0"/>
+  <testcase classname="ISO_C01_G01.YearBisiesto.bisiestosTest" name="tests4" time="0.001"/>
   <testcase classname="ISO_C01_G01.YearBisiesto.bisiestosTest" name="tests5" time="0"/>
-  <testcase classname="ISO_C01_G01.YearBisiesto.bisiestosTest" name="testsgetters" time="0"/>
+  <testcase classname="ISO_C01_G01.YearBisiesto.bisiestosTest" name="testsgetters" time="0.001"/>
 </testsuite>
