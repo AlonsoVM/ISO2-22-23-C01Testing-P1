@@ -1,18 +1,9 @@
 package ISO_C01_G01.YearBisiesto;
 
-import java.util.InputMismatchException;
-
-
 public class calculoBisiesto {
-	public static void main(String [] args) throws Excepcion {
-		//fechaP datosMes = new fechaP(2, -1, 2000);
-		//comprobarDatos(datosMes);
-		
-	
-	}
 	public static String comprobarDatos(fechaP datos){
 		 
-		try {
+		
 			if (datos.getDia() <= 0 || datos.getDia() > 31){
 				return "dia negativo";
 			}
@@ -22,9 +13,7 @@ public class calculoBisiesto {
 			if (datos.getAnno() <= 0 ) {
 				return "año negativo";
 			}
-		}catch (InputMismatchException e){
-			System.err.print(e);
-		}
+		
 		String a = comprobarBisiesto(datos);
 		return a;
 	}	

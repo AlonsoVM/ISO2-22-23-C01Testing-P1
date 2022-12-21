@@ -1,43 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>calculoBisiesto.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">YearBisiesto</a> &gt; <a href="index.source.html" class="el_package">ISO_C01_G01.YearBisiesto</a> &gt; <span class="el_source">calculoBisiesto.java</span></div><h1>calculoBisiesto.java</h1><pre class="source lang-java linenums">package ISO_C01_G01.YearBisiesto;
 
-import java.util.InputMismatchException;
-
-
-<span class="nc" id="L6">public class calculoBisiesto {</span>
-<span class="nc" id="L7">	public static void main(String [] args) throws Excepcion {</span>
-		//fechaP datosMes = new fechaP(2, -1, 2000);
-		//comprobarDatos(datosMes);
-		
-	
-	}
+<span class="nc" id="L3">public class calculoBisiesto {</span>
 	public static String comprobarDatos(fechaP datos){
 		 
-		try {
-<span class="pc bpc" id="L16" title="1 of 4 branches missed.">			if (datos.getDia() &lt;= 0 || datos.getDia() &gt; 31){</span>
-<span class="fc" id="L17">				return &quot;dia negativo&quot;;</span>
+		
+<span class="pc bpc" id="L7" title="1 of 4 branches missed.">			if (datos.getDia() &lt;= 0 || datos.getDia() &gt; 31){</span>
+<span class="fc" id="L8">				return &quot;dia negativo&quot;;</span>
 			}
-<span class="pc bpc" id="L19" title="1 of 4 branches missed.">			if (datos.getMes() &lt;= 0 || datos.getMes() &gt; 12) {</span>
-<span class="fc" id="L20">				return &quot;mes negativo&quot;;</span>
+<span class="pc bpc" id="L10" title="1 of 4 branches missed.">			if (datos.getMes() &lt;= 0 || datos.getMes() &gt; 12) {</span>
+<span class="fc" id="L11">				return &quot;mes negativo&quot;;</span>
 			}
-<span class="fc bfc" id="L22" title="All 2 branches covered.">			if (datos.getAnno() &lt;= 0 ) {</span>
-<span class="fc" id="L23">				return &quot;año negativo&quot;;</span>
+<span class="fc bfc" id="L13" title="All 2 branches covered.">			if (datos.getAnno() &lt;= 0 ) {</span>
+<span class="fc" id="L14">				return &quot;año negativo&quot;;</span>
 			}
-<span class="nc" id="L25">		}catch (InputMismatchException e){</span>
-<span class="nc" id="L26">			System.err.print(e);</span>
-		}
-<span class="fc" id="L28">		String a = comprobarBisiesto(datos);</span>
-<span class="fc" id="L29">		return a;</span>
+		
+<span class="fc" id="L17">		String a = comprobarBisiesto(datos);</span>
+<span class="fc" id="L18">		return a;</span>
 	}	
 	
 	public static String comprobarBisiesto(fechaP datos){
 			
-<span class="fc bfc" id="L34" title="All 2 branches covered.">			if ( ( (datos.getAnno() % 4) == 0) &amp;&amp; </span>
-<span class="pc bpc" id="L35" title="1 of 2 branches missed.">			( (datos.getAnno() % 100) != 0) || </span>
-<span class="pc bpc" id="L36" title="1 of 2 branches missed.">			( (datos.getAnno() % 400) == 0) ){</span>
+<span class="fc bfc" id="L23" title="All 2 branches covered.">			if ( ( (datos.getAnno() % 4) == 0) &amp;&amp; </span>
+<span class="pc bpc" id="L24" title="1 of 2 branches missed.">			( (datos.getAnno() % 100) != 0) || </span>
+<span class="pc bpc" id="L25" title="1 of 2 branches missed.">			( (datos.getAnno() % 400) == 0) ){</span>
 
-<span class="fc" id="L38">				return &quot;es Bisiesto&quot;;</span>
+<span class="fc" id="L27">				return &quot;es Bisiesto&quot;;</span>
 			}else {
-<span class="fc" id="L40">				return &quot;no Bisiesto&quot;;</span>
+<span class="fc" id="L29">				return &quot;no Bisiesto&quot;;</span>
 			}
 	}
 }
