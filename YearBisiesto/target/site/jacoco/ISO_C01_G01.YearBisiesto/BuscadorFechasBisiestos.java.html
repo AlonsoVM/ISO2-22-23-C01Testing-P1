@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BuscadorFechasBisiestos.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">YearBisiesto</a> &gt; <a href="index.source.html" class="el_package">ISO_C01_G01.YearBisiesto</a> &gt; <span class="el_source">BuscadorFechasBisiestos.java</span></div><h1>BuscadorFechasBisiestos.java</h1><pre class="source lang-java linenums">//clase para calcular los bisiestos
+package ISO_C01_G01.YearBisiesto;
+
+<span class="nc" id="L4">public class BuscadorFechasBisiestos {</span>
+	public static String comprobarDatos(FechaP datos){
+		 
+<span class="fc" id="L7">			String cadena = &quot;&quot;;</span>
+<span class="fc" id="L8">			String cadenaBIS = &quot;&quot;;</span>
+			
+<span class="pc bpc" id="L10" title="1 of 4 branches missed.">			if (datos.getDia() &lt;= 0 || datos.getDia() &gt; 31){</span>
+<span class="fc" id="L11">				cadena = &quot;dia negativo&quot;;</span>
+<span class="fc" id="L12">				System.out.println(cadena);</span>
+			}
+<span class="pc bpc" id="L14" title="1 of 4 branches missed.">			if (datos.getMes() &lt;= 0 || datos.getMes() &gt; 12) {</span>
+<span class="fc" id="L15">				cadena = &quot;mes negativo&quot;;</span>
+<span class="fc" id="L16">				System.out.println(cadena);</span>
+			}
+<span class="fc bfc" id="L18" title="All 2 branches covered.">			if (datos.getAnno() &lt;= 0 ) {</span>
+<span class="fc" id="L19">				cadena = &quot;año negativo&quot;;</span>
+<span class="fc" id="L20">				System.out.println(cadena);</span>
+			}
+		
+<span class="fc" id="L23">		cadenaBIS = comprobarBisiesto(datos);</span>
+<span class="fc" id="L24">		return cadenaBIS;</span>
+	}	
+	
+	public static String comprobarBisiesto(FechaP datos){
+			
+<span class="fc bfc" id="L29" title="All 2 branches covered.">			if ( ( (datos.getAnno() % 4) == 0) &amp;&amp; </span>
+<span class="pc bpc" id="L30" title="1 of 2 branches missed.">			( (datos.getAnno() % 100) != 0) || </span>
+<span class="pc bpc" id="L31" title="1 of 2 branches missed.">			( (datos.getAnno() % 400) == 0) ){</span>
+
+<span class="fc" id="L33">				return &quot;es Bisiesto&quot;;</span>
+			}else {
+<span class="fc" id="L35">				return &quot;no Bisiesto&quot;;</span>
+			}
+	}
+}
+
+
+	
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

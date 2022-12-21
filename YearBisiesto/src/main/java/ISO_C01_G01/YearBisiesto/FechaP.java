@@ -1,11 +1,11 @@
 //clase fechaP
 package ISO_C01_G01.YearBisiesto;
-	public class fechaP {
+	public class FechaP {
 		int dia;
 		int mes;
 		int anno;
 		
-		public fechaP(int dia, int mes, int anno) {
+		public FechaP(int dia, int mes, int anno) {
 			this.dia = dia;
 			this.mes = mes;
 			this.anno = anno;
