@@ -1,3 +1,4 @@
+//clase para testing
 package ISO_C01_G01.YearBisiesto;
 import static org.junit.Assert.*;
 
@@ -8,14 +9,14 @@ public class bisiestosTest
 {
 	@Test
     public void testsgetters() {
-    	fechaP fecha = new fechaP(2, 2, 2004);
+    	FechaP fecha = new FechaP(2, 2, 2004);
     	assertEquals(fecha.getDia(), 2);
     	assertEquals(fecha.getMes(), 2);
     	
     }
 	@Test
 	public void testsetter() {
-    	fechaP fecha = new fechaP(2, 2, 2004);
+    	FechaP fecha = new FechaP(2, 2, 2004);
     	fecha.setAnno(1);
     	fecha.setDia(1);
     	fecha.setMes(1);
@@ -25,27 +26,27 @@ public class bisiestosTest
 	}
 	@Test
     public void tests1() {
-    	fechaP fecha = new fechaP(2, -1, 2004);
-    	assertEquals(calculoBisiesto.comprobarDatos(fecha), "mes negativo");
+    	FechaP fecha = new FechaP(2, -1, 2004);
+    	assertEquals(BuscadorFechasBisiestos.comprobarDatos(fecha), "mes negativo");
     }
 	@Test
     public void tests2() {
-    	fechaP fecha = new fechaP(-1, -1, 2004);
-    	assertEquals(calculoBisiesto.comprobarDatos(fecha), "dia negativo");
+    	FechaP fecha = new FechaP(-1, -1, 2004);
+    	assertEquals(BuscadorFechasBisiestos.comprobarDatos(fecha), "dia negativo");
     }
 	@Test
     public void tests3() {
-    	fechaP fecha = new fechaP(2, 2, -1);
-    	assertEquals(calculoBisiesto.comprobarDatos(fecha), "año negativo");
+    	FechaP fecha = new FechaP(2, 2, -1);
+    	assertEquals(BuscadorFechasBisiestos.comprobarDatos(fecha), "año negativo");
     }
 	@Test
     public void tests4() {
-    	fechaP fecha = new fechaP(2, 2, 2004);
-    	assertEquals(calculoBisiesto.comprobarDatos(fecha), "es Bisiesto");
+    	FechaP fecha = new FechaP(2, 2, 2004);
+    	assertEquals(BuscadorFechasBisiestos.comprobarDatos(fecha), "es Bisiesto");
     }
 	@Test
     public void tests5() {
-    	fechaP fecha = new fechaP(2, 2, 2005);
-    	assertEquals(calculoBisiesto.comprobarDatos(fecha), "no Bisiesto");
+    	FechaP fecha = new FechaP(2, 2, 2005);
+    	assertEquals(BuscadorFechasBisiestos.comprobarDatos(fecha), "no Bisiesto");
     }
 }
